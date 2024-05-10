@@ -3,6 +3,7 @@ import './App.css'
 import CountButton from './components/CountButton'
 import Header from './components/Header'
 import Form from './components/Form/Form'
+import Prueba from './components/Form/Prueba'
 
 
 function App() {
@@ -13,6 +14,8 @@ function App() {
     
       <Header title="Formulario de Ingreso"/>
       <Form></Form>
+      <Prueba></Prueba>
+      
         <p>
           Edit <code>src/App.tsx</code> and save to test HMR
         </p>
