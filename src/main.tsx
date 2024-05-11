@@ -6,7 +6,7 @@ import Prueba from './components/Form/Prueba.tsx'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    {/*<App />*/}
-    <Prueba/>
+    <App />
+    {/*<Prueba/>*/}
   </React.StrictMode>,
 )

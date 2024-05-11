@@ -14,7 +14,7 @@ function App() {
     
       <Header title="Formulario de Ingreso"/>
       <Form></Form>
-      <Prueba></Prueba>
+      {/*<Prueba></Prueba>*/}
       
         <p>
           Edit <code>src/App.tsx</code> and save to test HMR

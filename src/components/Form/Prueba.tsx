@@ -31,7 +31,7 @@ function Prueba() {
                         </thead>
                         <tbody>
                             <tr>
-                                <td>{movie.title}</td>
+                                <td>{movie.title}</td>*
                                 <td>{movie.director}</td>
                                 <td>{movie.year}</td>
                                 <td>{movie.duration}</td>
