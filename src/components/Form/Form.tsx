@@ -34,6 +34,11 @@ function Form() {
         logIn({ email, password });
     }
 
+    
+    const handleOnClick2 = () => {
+        navigate("../registroUsuario")
+    }
+
     const logIn = async ({ email, password }: { email: string, password: string }) => {
         try {
             const response = await fetch(`${API_URL}api/v1/auth/login`, {
@@ -97,7 +102,8 @@ function Form() {
                     </button>
                     <div className="extras">
                         
-                        <a href="#">¿No tienes cuenta? <span>Registrarse</span></a>
+                        <a onClick={handleOnClick2}>¿No tienes cuenta? <span>Registrarse</span></a>
+                    
                     </div>
                     
                 </div>

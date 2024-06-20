@@ -11,6 +11,8 @@ type Movie = {
     synopsis: string;
     cast: string[];
     imageUrl: string;
+    category: string;
+    user: string;
 };
 
 type OMDBMovie = {
@@ -39,7 +41,7 @@ const App: React.FC = () => {
         if (user) {
             const fetchUserMovies = async () => {
                 try {
-                    const response = await fetch('http://localhost:3000/api/v1/movies', {
+                    const response = await fetch(`http://localhost:3000/api/v1/movies?user=${user.user.id}`, {
                         headers: {
                             'Authorization': `Bearer ${user.token}`
                         }
@@ -87,10 +89,12 @@ const App: React.FC = () => {
             synopsis: '', // Agrega detalles adicionales si son necesarios
             cast: [], // Agrega detalles adicionales si son necesarios
             imageUrl: movie.Poster,
+            category: "66740f301ada6639930e8635",
+            user: `${user.user.id}`
         };
     
         try {
-            const response = await fetch('http://localhost:3000/api/v1/movies', {
+            const response = await fetch(`http://localhost:3000/api/v1/movies`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -116,6 +120,7 @@ const App: React.FC = () => {
 
     return (
         <div className="App">
+            <div className="fondo">
             <h1>Movie Search</h1>
             <input
                 type="text"
@@ -142,6 +147,7 @@ const App: React.FC = () => {
                         <p>{movie.synopsis}</p>
                     </div>
                 ))}
+            </div>
             </div>
         </div>
     );

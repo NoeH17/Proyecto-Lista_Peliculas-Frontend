@@ -1,43 +1,38 @@
 .App {
     text-align: center;
-}
-
-.fondo {
-    background-color: #000;
-    margin-top: 0%;
-    padding: 8%;
-}
-input {
+  }
+  
+  input {
     padding: 8px;
     margin: 10px;
-}
-
-button {
+  }
+  
+  button {
     padding: 8px;
     margin: 10px;
     cursor: pointer;
-}
-
-.search-results, .user-movies {
+  }
+  
+  .search-results, .user-movies {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-}
-
-.movie {
+  }
+  
+  .movie {
     border: 1px solid #ccc;
     margin: 10px;
     padding: 10px;
     width: 200px;
     text-align: left;
-}
-
-.movie img {
+  }
+  
+  .movie img {
     width: 100%;
     height: auto;
-}
-
-body{
+  }
+  
+  body {
     /*background-color: black;
     background-image: url('');
     background-color: #000;*/
@@ -45,11 +40,4 @@ body{
     background-position: center;
     background-repeat: no-repeat;
     height: 100vh;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    /* place-items: center; */
-    min-width: 320px;
-    min-height: 100vh;
-    flex-wrap: wrap;
-}
+  }
