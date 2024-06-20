@@ -1,10 +1,106 @@
-.formContainer{
-    display: flex;
+:root {
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+    color-scheme: light dark;
+    color: rgba(255, 255, 255, 0.87);
+    background-color: #242424;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
     flex-direction: column;
-    gap: 10px;
-}
-
-.inputContainer{
     display: flex;
     justify-content: space-between;
-}
+  }
+  
+  body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 320px;
+    min-height: 100vh;
+    background-image: url('fondo.png');
+    background-color: #000;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+  }
+
+  
+  
+  .loginContainer {
+    background-color: rgba(0, 0, 0, 0.75);
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    max-width: 350px;
+    width: 100%;
+    height: 50vh;
+  }
+  
+  .loginContainer h1 {
+    color: #fff;
+    margin-bottom: 20px;
+  }
+  
+  .formContainer input {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 4px;
+    border: 1px solid #333;
+    background-color: #333;
+    color: #fff;
+    font-size: larger;
+  }
+  
+  .formContainer button {
+    width: 60%;
+    padding: 12px;
+    margin: 20px 0;
+    border-radius: 4px;
+    border: none;
+    background-color: #e50914;
+    color: #fff;
+    cursor: pointer;
+    font-size: 20px;
+  }
+  
+  .formContainer button:hover {
+    background-color: #f6121d;
+  }
+  
+  .formContainer .extras {
+    text-align: left;
+    margin-top: 60px;
+  }
+  
+  .formContainer .extras a {
+    display: block;
+    color: #b3b3b3;
+    margin: 5px 0;
+    text-decoration: none;
+    text-align: center;
+  }
+  
+  .formContainer .extras a span {
+    color: #fff;
+  }
+  
+  .formContainer .extras label {
+    color: #b3b3b3;
+  }
+  
+  .formContainer .captcha {
+    color: #8c8c8c;
+    font-size: 12px;
+    margin-top: 20px;
+  }
+  
+  .formContainer .captcha a {
+    color: #0071eb;
+    text-decoration: none;
+  }
